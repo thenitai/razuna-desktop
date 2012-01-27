@@ -1,12 +1,12 @@
-Razuna Chrome Plugin
-====================
+Razuna Desktop Application
+==========================
 
-This Chrome plugin works with the [Razuna shared account](http://razuna.com) and with your self-hosted version.
+The Razuna Desktop Application works with the [Razuna shared account](http://razuna.com) and with your self-hosted version. It is a AIR codebase and leverages the Razuna API.
 
 Installation
 ------------
 
-Developers know how to activate the Razuna Chrome Plugin :-)
+Description here
 
 Support
 -------
