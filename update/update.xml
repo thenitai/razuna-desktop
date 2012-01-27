@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<update xmlns="http://ns.adobe.com/air/framework/update/description/2.5">
+  
+  <versionNumber>1.2.1</versionNumber>
+  
+  <url>http://s.razuna.com.s3.amazonaws.com/installers/rd/1.2/RazunaDesktop1.2.1.air</url>
+  
+  <description>
+	<![CDATA[
+	New in version version 1.2.1: 
+	* create and delete folders
+            ]]>
+  </description>
+  
+</update>

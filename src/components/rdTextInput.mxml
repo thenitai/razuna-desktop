@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+	ADOBE SYSTEMS INCORPORATED
+	Copyright 2008 Adobe Systems Incorporated
+	All Rights Reserved.
+
+	NOTICE: Adobe permits you to use, modify, and distribute this file
+	in accordance with the terms of the license agreement accompanying it.
+
+-->
+
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+	  alpha.disabled="0.5">
+    <s:transitions>
+        <s:Transition fromState="normal" toState="disabled" autoReverse="true">
+            <s:Parallel>
+                <s:Parallel target="{textDisplay}">
+                    <s:Resize duration="0"/>
+                </s:Parallel>
+            </s:Parallel>
+        </s:Transition>
+    </s:transitions>
+    <fx:Metadata>
+    	[HostComponent("spark.components.TextInput")]
+    </fx:Metadata> 
+    
+    <s:states>
+        <s:State name="normal"/>
+        <s:State name="disabled"/>
+        <s:State name="disabledWithPrompt"/>
+        <s:State name="normalWithPrompt"/>
+    </s:states>
+        
+	<s:Rect x="0.5" y="0.5" height="20" width="289">
+        <s:stroke>            
+            <s:SolidColorStroke color="0x5380D0" weight="1" color.normal="#939393"/>
+        </s:stroke>
+        <s:fill>
+            <s:SolidColor color="0xFFFFFF"/>
+        </s:fill>
+    </s:Rect>
+
+    <s:RichEditableText id="textDisplay" text="(Text)"
+              x="1" y="1" width="240" heightInLines="1"
+			  paddingLeft="4" paddingTop="4"
+              paddingRight="4" paddingBottom="4" 
+			  fontFamily.normal="Verdana" color.normal="#424242" width.normal="278" height.normal="20"/>
+
+</s:Skin>

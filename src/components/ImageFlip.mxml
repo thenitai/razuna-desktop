@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:ai="http://ns.adobe.com/ai/2008" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:lib="CustomComponent1_library.*" xmlns:fc="http://ns.adobe.com/thermo/2009">
+	<s:transitions>
+		<s:Transition fromState="Front" toState="Back" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{imageGroup}">
+					<s:Rotate3D angleXFrom="0" angleZFrom="0" angleXTo="0" autoCenterTransform="true" angleYTo="90" angleYFrom="0" autoCenterProjection="true" angleZTo="0" d:noAutoDelete="true"/>
+					<s:Fade duration="100" startDelay="500"/>
+				</s:Parallel>
+				<s:Parallel target="{loginGroup}">
+					<s:Rotate3D angleXFrom="0" angleZFrom="0" angleXTo="0" autoCenterTransform="true" angleYTo="0" angleYFrom="-90" autoCenterProjection="true" angleZTo="0" d:noAutoDelete="true" startDelay="500"/>
+					<s:Fade duration="100" startDelay="500"/>
+					<s:Move autoCenterTransform="true" duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+		<s:Transition fromState="Back" toState="Front" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{imageGroup}">
+					<s:Fade duration="150" startDelay="500"/>
+					<s:Rotate3D angleXFrom="0" angleZFrom="0" angleXTo="0" autoCenterTransform="true" angleYTo="0" angleYFrom="90" autoCenterProjection="true" angleZTo="0" d:noAutoDelete="true" startDelay="500"/>
+				</s:Parallel>
+				<s:Parallel target="{loginGroup}">
+					<s:Move autoCenterTransform="true" duration="0"/>
+					<s:Fade duration="150" startDelay="500"/>
+					<s:Rotate3D angleXFrom="0" angleZFrom="0" angleXTo="0" autoCenterTransform="true" angleYTo="-90" angleYFrom="0" autoCenterProjection="true" angleZTo="0" d:noAutoDelete="true"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+	</s:transitions>
+	<fx:Script>
+		<![CDATA[
+			
+			[Bindable]
+			public var currentBitmap:Bitmap;
+			
+
+
+			protected function Button_click():void
+			{
+				var state:String = currentState;
+				if ( state == 'Front' ) {
+					currentState='Back';
+				}
+			}
+
+
+			protected function Button_click_1():void
+			{
+				var state:String = currentState;
+				if ( state == 'Back' ) {
+					currentState='Front';
+				}
+			}
+
+		]]>
+
+	</fx:Script>
+	<s:states>
+		<s:State name="Front" fc:color="0xcc0000"/>
+		<s:State name="Back"/>
+	</s:states>
+	<s:Group d:userLabel="Front" visible.Back="false" id="imageGroup" y="1">
+		<s:Rect width="211" height="211" ai:knockout="0" id="rect2" d:userLabel="Rectangle">
+			<s:fill>
+				<s:SolidColor color="0x424242"/>
+			</s:fill>
+		</s:Rect>
+		<!--source="@Embed('/assets/bat-logo.png')"-->
+		<s:BitmapImage source="{currentBitmap}" resizeMode="scale" id="droppedImage" width="211" height="211"/>
+		<s:Button x="186" y="5" skinClass="components.infoButton" click="Button_click()" d:userLabel="infoButton"/>
+	</s:Group>
+	<s:Group id="loginGroup" d:userLabel="Back" y.Front="1" visible.Front="false">
+		<s:Rect width="211" height="211" ai:knockout="0" id="rect0" d:userLabel="Rectangle">
+			<s:fill>
+				<s:SolidColor color="0x424242"/>
+			</s:fill>
+		</s:Rect>
+		<s:RichText color="#757575" fontSize="11" fontFamily="Verdana" height="12" d:userLabel="Title" text="Title" width="38" id="richtext0" y="1" y.Front="21" y.Back="22"/>
+		<s:RichText color="#757575" fontSize="11" fontFamily="Verdana" height="12" d:userLabel="hostidTextInput" y="36" id="hostidLabel" text="File name" width="77" y.Front="56" y.Back="57"/>
+		<s:RichText color="#757575" fontSize="11" fontFamily="Verdana" height="12" d:userLabel="FileType" y="75" id="richtext8" text="File type" width="67" y.Front="95" y.Back="96"/>
+		<s:RichText color="#757575" fontSize="11" fontFamily="Verdana" height="12" d:userLabel="File size" y="114" id="richtext9" text="File size" width="67" y.Front="134" y.Back="135"/>
+		<s:RichText color="#d8d8d8" text="Text 4" fontSize="12" fontFamily="Verdana" height="12" d:userLabel="FileTitleText" x="62" id="fileTitle" width="149" fontWeight="bold" y.Front="20" y.Back="21" text.Back="Lucy"/>
+		<s:RichText color="#d8d8d8" text="Text 5" fontSize="12" fontFamily="Verdana" height="12" d:userLabel="FileNameText" y="36" id="fileName" x="62" width="150" fontWeight="bold" y.Front="56" y.Back="56" text.Back="lucy.jpg" x.Back="63"/>
+		<s:RichText color="#d8d8d8" text="Text 6" fontSize="12" fontFamily="Verdana" height="12" d:userLabel="FileTypeText" y="73" id="richtext12" x="62" width="150" fontWeight="bold" y.Front="93" y.Back="94" text.Back="JPEG"/>
+		<s:RichText color="#d8d8d8" text="(Label)" fontSize="12" fontFamily="Verdana" height="12" d:userLabel="FileSizeText" x="62" id="labelElement" width="149" y="114" fontWeight="bold" y.Front="134" y.Back="135" text.Back="4Mo"/>
+		<s:Button x="186" y="5" skinClass="components.Bouton7" click="Button_click_1()" id="button1"/>
+	</s:Group>
+	<fx:Private>
+		<ai:PrivateElement d:ref="#2">
+			<ai:LayerOptions colorType="ThreeColor">
+				<ai:ThreeColor blue="79.31" green="79.31" red="257"/>
+			</ai:LayerOptions>
+		</ai:PrivateElement>
+		<ai:PrivateElement d:ref="#2">
+			<ai:LayerOptions colorType="ThreeColor">
+				<ai:ThreeColor blue="79.31" green="257" red="79.31"/>
+			</ai:LayerOptions>
+		</ai:PrivateElement>
+	</fx:Private>
+</s:Group>

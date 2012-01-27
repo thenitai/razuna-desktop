@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+		alpha.disabled="0.5" xmlns:fc="http://ns.adobe.com/thermo/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt">
+	<s:transitions>
+		<s:Transition fromState="up" toState="over" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{path1}">
+					<s:Move autoCenterTransform="true" duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+		<s:Transition fromState="down" toState="up" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{path1}">
+					<s:Move autoCenterTransform="true" duration="0"/>
+				</s:Parallel>
+				
+				<s:Parallel target="{img}">
+					<s:Move autoCenterTransform="true" duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+		<s:Transition fromState="disabled" toState="up" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{path1}">
+					<s:Move autoCenterTransform="true" duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+	</s:transitions>
+	
+	<fx:Metadata>
+		[HostComponent("spark.components.Button")]
+	</fx:Metadata>
+	
+	<s:states>
+		<s:State name="up" />
+		<s:State name="over" />
+		<s:State name="down" />
+		<s:State name="disabled" />
+	</s:states>
+	<s:Path winding="nonZero" data="M 19 20 C 19 21.105 18.105 22 17 22 L 2 22 C 0.896 22 0 21.105 0 20 L 0 2 C 0 0.896 0.896 0 2 0 L 17 0 C 18.105 0 19 0.896 19 2 L 19 20 Z" data.over="M 19.5 20.5 C 19.5 21.606 18.605 22.5 17.5 22.5 L 2.5 22.5 C 1.396 22.5 0.5 21.606 0.5 20.5 L 0.5 2.5 C 0.5 1.396 1.396 0.5 2.5 0.5 L 17.5 0.5 C 18.605 0.5 19.5 1.396 19.5 2.5 L 19.5 20.5 Z" data.down="M 19.5 20.5 C 19.5 21.606 18.605 22.5 17.5 22.5 L 2.5 22.5 C 1.396 22.5 0.5 21.606 0.5 20.5 L 0.5 2.5 C 0.5 1.396 1.396 0.5 2.5 0.5 L 17.5 0.5 C 18.605 0.5 19.5 1.396 19.5 2.5 L 19.5 20.5 Z" data.disabled="M 19.5 20.5 C 19.5 21.606 18.605 22.5 17.5 22.5 L 2.5 22.5 C 1.396 22.5 0.5 21.606 0.5 20.5 L 0.5 2.5 C 0.5 1.396 1.396 0.5 2.5 0.5 L 17.5 0.5 C 18.605 0.5 19.5 1.396 19.5 2.5 L 19.5 20.5 Z" data.up="M 19 20 C 19 21.106 18.105 22 17 22 L 2 22 C 0.896 22 0 21.106 0 20 L 0 2 C 0 0.896 0.896 0 2 0 L 17 0 C 18.105 0 19 0.896 19 2 L 19 20 Z" id="path1" y.over="-0.5" x.over="-0.5" y.down="0.5" x.down="0.5" y.disabled="-0.5" x.disabled="-0.5">
+		<s:fill>
+			<s:SolidColor color="0x424242" color.over="#686969" color.down="#686969" color.disabled="#d6d6d6"/>
+		</s:fill>
+	</s:Path>
+	
+	<s:Image id="img" source="@Embed('/assets/newBtn.png')" width="17" height="20" x.down="2" x.up="1" x.over="1" x.disabled="1" y.down="2" y.up="1" y.over="1" y.disabled="1" />
+</s:Skin>

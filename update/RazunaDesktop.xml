@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<update xmlns="http://ns.adobe.com/air/framework/update/description/1.0">  
+<version>1.2.1</version>  
+<url>http://www.batchass.fr/razuna/RazunaDesktop1.2.1.air</url>  
+<description><![CDATA[ 
+Important: AIR 2.0 must be installed !
+New in version 1.2.1: 
+* create and delete folders
+]]></description>  
+</update>  

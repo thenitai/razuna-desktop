@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:fx="http://ns.adobe.com/mxml/2009">
+	<fx:Script>
+		<![CDATA[
+			import flash.events.MouseEvent;
+			
+			import fr.batchass.ImageCacheManager;
+			
+			import mx.events.*;
+			
+			private var dragUrl:String;
+			private var gb:Singleton = Singleton.getInstance();
+			private static var _imageCache:ImageCacheManager = ImageCacheManager.getInstance();
+			[Bindable]
+			private var cachedThumbnail:String;
+			
+			override public function set data( value:Object ) : void {
+				super.data = value;
+				if ( data )
+				{
+					if ( (data.thumbnail) && (data.folderid) )	
+					{
+						cachedThumbnail = getCachedThumbnail( data.thumbnail, data.folderid );
+					}
+					else
+					{
+						cachedThumbnail = 'assets/closeBtn.png';
+					}
+					trace("cachedThumbnail:" + cachedThumbnail);
+					//TODO: load on asset click: _imageCache.getAssetByURL( data.url, data.folderid );
+
+				}
+			}
+	//getCachedThumbnail({data.thumbnail}, {data.folderid}) creationComplete="dispatchEvent(new Event('createThumbnail'))"
+			//private var assets:ArrayCollection
+			//[Bindable(event="createThumbnail")]
+			private function getCachedThumbnail( thumbnailUrl:String, folderid:String ):String
+			{
+				var cachedThumbUrl:String = _imageCache.getAssetThumbnailByURL( thumbnailUrl, folderid );//TODO it is http: should be local file
+				//cachedThumbnail = cachedThumbUrl;
+				//imgUrl.source = cachedThumbUrl;
+				return cachedThumbUrl;
+			}
+			//this function is not yet called
+			/* private function getDownloadFiles():Array
+			{
+				var files:Array = new Array();
+				try
+				{
+					var cachedAssetUrl:String = _imageCache.getAssetByURL( data.url, data.folderid ); */
+					/* gb.log( "rdAssetItemRenderer, getDownloadFiles, cachedThumbUrl: " + cachedThumbUrl );
+					gb.log( "rdAssetItemRenderer, getDownloadFiles, data.url: " + data.url );
+					gb.log( "rdAssetItemRenderer, getDownloadFiles, data.thumbnail: " + data.thumbnail );
+					gb.log( "rdAssetItemRenderer, getDownloadFiles, data.filename: " + data.filename );
+					gb.log( "rdAssetItemRenderer, getDownloadFiles, data.folderid: " + data.folderid ); */
+					/* var request:URLRequest = new URLRequest( cachedAssetUrl );
+					//var file:File = File.createTempDirectory().resolvePath( data.filename );
+					var file:File = File.createTempDirectory().resolvePath( cachedAssetUrl );
+					var buffer:FileBuffer = new FileBuffer(file);
+					var loader:URLLoader = new URLLoader();
+					
+					loader.dataFormat = URLLoaderDataFormat.BINARY;
+					loader.addEventListener(Event.COMPLETE, buffer.write);
+					loader.load(request);
+					
+					files.push(file);
+					
+				}
+				catch ( e:Error )
+				{
+					gb.log("rdAssetItemRenderer, getDownloadFiles, error: " + e.message);
+				}     
+				return files;
+			} */
+			protected function hg_mouseMoveHandler(event:MouseEvent):void
+			{
+				//OK var clip:Clipboard = new Clipboard();
+				//start
+				/* var cachedThumbUrl:String = _imageCache.getImageByURL( data.thumbnail, data.folderid );
+				clip.setDataHandler(ClipboardFormats.FILE_LIST_FORMAT, cachedThumbUrl); */
+				//end
+				//OK clip.setDataHandler(ClipboardFormats.FILE_LIST_FORMAT, getDownloadFiles);
+				
+				//OK var dragOptions:NativeDragOptions = new NativeDragOptions();
+				
+				//OK dragOptions.allowCopy = true;
+				
+				/* var imageProxy:Image = new Image();
+				imageProxy.source = imgUrl.source;
+				imageProxy.height = 40;
+				imageProxy.width = 40;
+				var exportAsset:BitmapData = new BitmapData( imageProxy.width, imageProxy.height );
+				exportAsset.draw( data.url ); 		 */		
+				//OK NativeDragManager.doDrag( event.currentTarget as InteractiveObject, clip, null, null, dragOptions );
+
+			}
+
+			protected function hg_clickHandler( event:MouseEvent, url:String ):void
+			{
+				trace(url);
+				trace( event.currentTarget.toString() );
+				_imageCache.getAssetByURL( data.url, data.folderid );
+				/* var selectedItem:XML = event.itemRenderer.data as XML;
+				var aId:Number = selectedItem.@id;
+				gb.log( "treeItemClick, aId: " + aId );
+				this.parentApplication.statusText.text = "Selected asset: " + selectedItem.@filename + ", url = " + selectedItem.@url; */
+				//gb.mediaComponent.streamName = url;
+				/* var selectedItem:XML = event.itemRenderer.data as XML;
+				var aId:Number = selectedItem.@id;
+				gb.log( "treeItemClick, aId: " + aId );
+				gb.infoLabel.text = "Selected asset: " + selectedItem.@filename + ", url = " + selectedItem.@url; */
+			}
+
+
+			protected function imgUrl_clickHandler(event:MouseEvent):void
+			{
+				trace( event.currentTarget.toString() );
+			}
+
+		]]>
+	</fx:Script>
+	
+	<s:states>
+		<s:State name="normal"/>
+		<s:State name="hovered"/>
+		<s:State name="selected" />
+	</s:states>
+	
+	<s:layout>
+		<s:VerticalLayout/>
+	</s:layout>
+	<!--baseColor.normal="#959090"-->
+	<s:HGroup id="hg" verticalAlign="middle" click="hg_clickHandler(event,data.url)" mouseMove="hg_mouseMoveHandler(event)" 
+		paddingTop="2" paddingBottom="2" paddingLeft="2" paddingRight="2">
+		<mx:Image id="imgUrl" alpha.hovered=".7" 
+				  source="{cachedThumbnail}" 
+				  click="imgUrl_clickHandler(event)"
+				  horizontalAlign="center"
+				  verticalAlign="middle"
+				  width="50" height="40" 
+				  scaleContent="true"
+				  toolTip="{data.description}"/>
+		<s:VGroup id="vg" width="320" height="40" x="4">
+			<s:RichText id="rtFilename" text="{data.filename}" height="15" 
+						color.hovered="0x1313cd" color.selected="0x000000" verticalAlign="bottom"
+						/>
+			<s:RichText id="rtThumb" text="[{data.size} bytes]" height="15" verticalAlign="bottom"/>
+		</s:VGroup>
+	</s:HGroup>
+</s:ItemRenderer>

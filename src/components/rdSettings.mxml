@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:ai="http://ns.adobe.com/ai/2008" 
+		 xmlns:d="http://ns.adobe.com/fxg/2008/dt" 
+		 xmlns:fc="http://ns.adobe.com/thermo/2009"
+		 xmlns:local="*"
+		 xmlns:mx="library://ns.adobe.com/flex/halo"
+		 creationComplete="init()"
+		 >
+	<fx:Style>
+		@namespace "library://ns.adobe.com/flex/spark";
+		#vGrp { 
+			color: #000000; 
+			fontFamily: "Verdana";
+			fontSize: "14";
+		}
+	</fx:Style>
+	
+	<fx:Script source="settingsPanel.as" />
+	
+	
+	<s:Panel title="Settings:" 
+			 width="100%" height="100%" 
+			 backgroundColor="#AAAAAA"
+			 >
+		<s:VGroup id="vGrp" horizontalCenter="0" top="3" 
+				  width="90%" height="90%" x="30">
+			
+			
+			<s:HGroup verticalAlign="middle" height="{lineHeight}">
+				<s:Label text="Retry on fault (in seconds):" width="{labelWidth}"/>
+				<s:NumericStepper id="retryNumStepper" value="5" maximum="50000" change="retryNumStepper_changeHandler(event)"/>
+			</s:HGroup>
+			<s:HGroup verticalAlign="middle" height="{lineHeight}">
+				<s:Label text="Zip file handling:" width="{labelWidth}" />
+				<s:CheckBox id="unzip" tabIndex="9" label="Extract files after upload" x="20" y="265" selected="true" d:userLabel="extractZip"/>
+			</s:HGroup>
+			<s:HGroup verticalAlign="middle" height="{lineHeight}">
+				<s:Label text="Log debug information:" width="{labelWidth}" />
+				<s:CheckBox id="debug" tabIndex="10" label="Debug" x="280" y="265" selected="false" />
+			</s:HGroup>
+			<s:HGroup verticalAlign="middle" height="{lineHeight}">
+				<s:Label text="Gallery, thumbnail width:" width="{labelWidth}" />
+				<s:NumericStepper id="thumbWidth" value="140" maximum="1000" change="thumbWidth_changeHandler(event)"/>
+			</s:HGroup>
+			<s:HGroup verticalAlign="middle" height="{lineHeight}">
+				<s:Label text="Gallery, thumbnail max height:" width="{labelWidth}" />
+				<s:NumericStepper id="thumbHeight" value="300" maximum="1000" change="thumbHeight_changeHandler(event)"/>
+			</s:HGroup>
+			<s:HGroup verticalAlign="middle" height="{lineHeight}">
+				<s:Label text="Gallery, image width:" width="{labelWidth}" />
+				<s:NumericStepper id="imageWidth" value="340" maximum="5000" change="imageWidth_changeHandler(event)"/>
+			</s:HGroup>
+			<s:HGroup verticalAlign="middle" height="{lineHeight}">
+				<s:Label text="Gallery, image max height:" width="{labelWidth}" />
+				<s:NumericStepper id="imageHeight" value="1000" maximum="5000" change="imageHeight_changeHandler(event)"/>
+			</s:HGroup>
+			<s:HGroup verticalAlign="middle" height="{lineHeight}">
+				<s:Button id="saveBtn" click="saveSettings();gb.gotoPreviousState()" tabIndex="8" label="Save settings" skinClass="components.rdButton"  d:userLabel="saveBtn"/>
+				<s:Button id="cancelBtn" click="gb.gotoPreviousState()" tabIndex="9" label="Cancel" skinClass="components.rdButton"  d:userLabel="cancelBtn"/>
+			</s:HGroup>
+			<s:RichText id="settingsInfo" />
+			
+		</s:VGroup>
+		
+	</s:Panel>
+</s:Group>

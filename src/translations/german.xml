@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<transid name="thisid">
+		<transtext>2</transtext>
+	</transid>
+	<transid name="username">
+		<transtext>Benutzername</transtext>
+	</transid>
+	<transid name="password">
+		<transtext>Passwort</transtext>
+	</transid>
+	<transid name="changelang">
+		<transtext>Sprache wechseln</transtext>
+	</transid>
+	<transid name="button_login">
+		<transtext>Anmelden</transtext>
+	</transid>
+	<transid name="login_error">
+		<transtext>Wir konnten Sie leider nicht am System anmelden. Bitte versuchen Sie es nochmals.</transtext>
+	</transid>
+	<transid name="logoff">
+		<transtext>Abmelden</transtext>
+	</transid>
+	<transid name="headerlogin">
+		<transtext>Login für das Digital Asset Management</transtext>
+	</transid>
+	<transid name="error_nousername">
+		<transtext>Bitte geben Sie einen Benutzernamen an!</transtext>
+	</transid>
+	<transid name="error_nopassword">
+		<transtext>Bitte geben Sie Ihr Passwort an!</transtext>
+	</transid>
+	<transid name="forgot_password">
+		<transtext>Ich habe mein Passwort vergessen</transtext>
+	</transid>
+	<transid name="welcome_to_ecp">
+		<transtext>Willkommen zu Razuna Digital Asset Management</transtext>
+	</transid>
+	<transid name="welcome_text">
+		<transtext><![CDATA[Razuna ist Ihre Lösung für das umfangreiche verwalten aller digital Daten. Auf der linken Seite können Sie Ordner verwalten, darin Ihre Daten speichern, publizieren und mit anderen teilen.<br><br>Aktuelle Informationen zu Razuna finden Sie jeweils unter <a href="http://www.razuna.com" target="_target">http://www.razuna.com</a>. Ebenfalls empfehlen wir das Sie unseren Blog unter <a href="http://blog.sixsigns.com" target="_target">http://blog.sixsigns.com</a> regelmässig besuchen.]]></transtext>
+	</transid>
+	<transid name="support_desc">
+		<transtext><![CDATA[Direkten Support von der SixSigns AG ist nur mit einem Support-Vertrag verfügbar. Für die "Community-Edition" erhalten Sie Support im Razuna Forum, der Online Hilfe und/oder im Bug Tracking / Knowledge Base System.]]></transtext>
+	</transid>
+	<transid name="online_help_link">
+		<transtext>Wiki</transtext>
+	</transid>
+	<transid name="direct_support">
+		<transtext>Direkten Support</transtext>
+	</transid>
+	<transid name="contact_support">
+		<transtext>Support anfordern</transtext>
+	</transid>
+	<transid name="header_search">
+		<transtext>Suchen</transtext>
+	</transid>
+	<transid name="type_of_file">
+		<transtext>Suche in</transtext>
+	</transid>
+	<transid name="search_for_allassets">
+		<transtext>Alle Daten</transtext>
+	</transid>
+	<transid name="search_for_images">
+		<transtext>Nur Bilder</transtext>
+	</transid>
+	<transid name="search_for_documents">
+		<transtext>Nur Dokumente</transtext>
+	</transid>
+	<transid name="search_for_videos">
+		<transtext>Nur Videos</transtext>
+	</transid>
+	<transid name="button_find">
+		<transtext>Finden</transtext>
+	</transid>
+	<transid name="link_adv_search">
+		<transtext>Erweiterte Suche</transtext>
+	</transid>
+	<transid name="header_explorer">
+		<transtext>Explorer</transtext>
+	</transid>
+	<transid name="header_favorites">
+		<transtext>Favoriten</transtext>
+	</transid>
+	<transid name="header_basket">
+		<transtext>Mappe</transtext>
+	</transid>
+	<transid name="header_administration">
+		<transtext>Administration</transtext>
+	</transid>
+	<transid name="first_level">
+		<transtext>Erste Ebene</transtext>
+	</transid>
+	<transid name="folder_new">
+		<transtext>Ordner erstellen</transtext>
+	</transid>
+	<transid name="folder_name">
+		<transtext>Ordnername</transtext>
+	</transid>
+	<transid name="description">
+		<transtext>Beschreibung</transtext>
+	</transid>
+	<transid name="access_for">
+		<transtext>Zugriff für</transtext>
+	</transid>
+	<transid name="per_read">
+		<transtext>Nur Lesen</transtext>
+	</transid>
+	<transid name="per_read_write">
+		<transtext><![CDATA[Lesen / Schreiben]]></transtext>
+	</transid>
+	<transid name="per_all">
+		<transtext>Keine Einschränkung</transtext>
+	</transid>
+	<transid name="everybody">
+		<transtext>Alle</transtext>
+	</transid>
+	<transid name="button_save">
+		<transtext>Speichern</transtext>
+	</transid>
+	<transid name="button_add">
+		<transtext>Hinzufügen</transtext>
+	</transid>
+	<transid name="no_subfolders">
+		<transtext>Es befinden sich keine Unter-Ordner in diesem Ordner. Auf der rechten Seite finden Sie den Inhalt dieses Ordners. Mit dem Icon obnen können Sie einen weiteren Ordner erfassen.</transtext>
+	</transid>
+	<transid name="group_inherit">
+		<transtext>Rechte auf Unter-Ordner vererben</transtext>
+	</transid>
+	<transid name="button_update">
+		<transtext>Aktualisieren</transtext>
+	</transid>
+	<transid name="remove_folder">
+		<transtext>Ordner löschen</transtext>
+	</transid>
+	<transid name="remove_folder_desc">
+		<transtext><![CDATA[Wollen Sie diesen Ordner wirklich von Ihrem System löschen?<br><br>Hinweis: ALLE Unter-Ordner und Dateien werden dabei ebenfalls gelöscht! Diese Aktion ist unwiederruflich!]]></transtext>
+	</transid>
+	<transid name="remove_folder_confirm">
+		<transtext>Folder erfolgreich gelöscht</transtext>
+	</transid>
+	<transid name="remove_folder_confirm_desc">
+		<transtext>Der Ordner und alle Dateien und Unter-Ordner wurden erfolgreich aus dem System gelöscht!</transtext>
+	</transid>
+	<transid name="success">
+		<transtext>Der Datensatz wurde erfolgreich aktualisiert</transtext>
+	</transid>
+	<transid name="move_folder">
+		<transtext>Ordner verschieben</transtext>
+	</transid>
+	<transid name="folder_content">
+		<transtext>Inhalt dieses Ordners</transtext>
+	</transid>
+	<transid name="folder_count_total">
+		<transtext>Anzahl Dateien</transtext>
+	</transid>
+	<transid name="header_doc">
+		<transtext>Word</transtext>
+	</transid>
+	<transid name="header_img">
+		<transtext>Bilder</transtext>
+	</transid>
+	<transid name="header_other">
+		<transtext>Andere Formate</transtext>
+	</transid>
+	<transid name="header_pdf">
+		<transtext>PDF</transtext>
+	</transid>
+	<transid name="header_vid">
+		<transtext>Videos</transtext>
+	</transid>
+	<transid name="header_xls">
+		<transtext>Excel</transtext>
+	</transid>
+	<transid name="add_file">
+		<transtext><![CDATA[Datei(en) hinzufügen]]></transtext>
+	</transid>
+	<transid name="file_name">
+		<transtext>Dateiname</transtext>
+	</transid>
+	<transid name="date_created">
+		<transtext>Erfassungsdatum</transtext>
+	</transid>
+	<transid name="date_changed">
+		<transtext>Letzte Änderung</transtext>
+	</transid>
+	<transid name="folder_content">
+		<transtext>Ordner-Inhalt</transtext>
+	</transid>
+	<transid name="folder_images">
+		<transtext>Bilder</transtext>
+	</transid>
+	<transid name="folder_videos">
+		<transtext>Videos</transtext>
+	</transid>
+	<transid name="folder_word">
+		<transtext>Word</transtext>
+	</transid>
+	<transid name="folder_excel">
+		<transtext>Excel</transtext>
+	</transid>
+	<transid name="folder_pdf">
+		<transtext>PDF</transtext>
+	</transid>
+	<transid name="folder_others">
+		<transtext>Andere Formate</transtext>
+	</transid>
+	<transid name="folder_properties">
+		<transtext>Ordner-Eigenschaften</transtext>
+	</transid>
+	<transid name="folder_search">
+		<transtext>Suche in Ordner</transtext>
+	</transid>
+	<transid name="put_in_basket">
+		<transtext>In Arbeitsmappe ablegen</transtext>
+	</transid>
+	<transid name="file_detail">
+		<transtext>Details</transtext>
+	</transid>
+	<transid name="server_platform">
+		<transtext>Server Betriebsystem</transtext>
+	</transid>
+	<transid name="server_platform_version">
+		<transtext>Betriebsystem Version</transtext>
+	</transid>
+	<transid name="coldfusion_version">
+		<transtext>CFML Version</transtext>
+	</transid>
+	<transid name="coldfusion_product">
+		<transtext>CFML Engine</transtext>
+	</transid>
+	<transid name="server_url">
+		<transtext>URL dieses Servers</transtext>
+	</transid>
+	<transid name="database_in_use">
+		<transtext>Benutzte Datenbank</transtext>
+	</transid>
+	<transid name="header_add_asset">
+		<transtext>Datei hinzufügen</transtext>
+	</transid>
+	<transid name="header_add_asset_many">
+		<transtext>Mehrere Dateien hinzufügen</transtext>
+	</transid>
+	<transid name="header_add_asset_server">
+		<transtext>Von Server hinzufügen</transtext>
+	</transid>
+	<transid name="header_add_asset_email">
+		<transtext>Von eMail hinzufügen</transtext>
+	</transid>
+	<transid name="header_add_asset_ftp">
+		<transtext>Mit FTP hinzufügen</transtext>
+	</transid>
+	<transid name="choose_asset">
+		<transtext>Datei wählen</transtext>
+	</transid>
+	<transid name="upload">
+		<transtext>Upload</transtext>
+	</transid>
+	<transid name="upload_zip_desc">
+		<transtext>Sie können auch ein Zip-Archiv hinzufügen!</transtext>
+	</transid>
+	<transid name="link_keyword_explorer">
+		<transtext>Stichwörter-Explorer</transtext>
+	</transid>
+	<transid name="header_zip">
+		<transtext>Vorgehen bei Zip-Archiven</transtext>
+	</transid>
+	<transid name="header_zip_desc">
+		<transtext>Zip-Archiv extrahieren und Ordner-Struktur speichern</transtext>
+	</transid>
+	<transid name="header_thumbnail_size">
+		<transtext>Thumbnail Grösse</transtext>
+	</transid>
+	<transid name="header_thumbnail_size_desc">
+		<transtext>Razuna erstellt automatisch eine Vorschau Ihrer Bild-Datei. Definieren Sie hier die Grösse der Vorschau in Pixel</transtext>
+	</transid>
+	<transid name="width">
+		<transtext>Breite</transtext>
+	</transid>
+	<transid name="heigth">
+		<transtext>Höhe</transtext>
+	</transid>
+	<transid name="header_video_preview_size">
+		<transtext>Video-Vorschau Grösse definieren</transtext>
+	</transid>
+	<transid name="header_video_preview_size_desc">
+		<transtext>Razuna erstellt automatisch einen Vorschau-Film und ein Standbild von Ihrer Original Video-Datei. Hier können Sie die Grösse dieser Vorschau anpassen oder die Grösse der generellen Präferenz übernehmen</transtext>
+	</transid>
+	<transid name="error_upload">
+		<transtext>Ich habe nichts zum uploaden oder diese Datei kann ich nicht lesen!</transtext>
+	</transid>
+	<transid name="keywords">
+		<transtext>Stichwörter</transtext>
+	</transid>
+	<transid name="upload_not_submitted">
+		<transtext>Bitte laden Sie Ihre Datei zuerst auf den Server bevor Sie fortfahren</transtext>
+	</transid>
+	<transid name="upload_wait_message">
+		<transtext>Bitte warten Sie und unterbrechen Sie den Upload nicht. Besonders Bilder und Videos die gross sind können einige Minuten dauern bis diese gespeichert sind!</transtext>
+	</transid>
+	<transid name="header_serverfolders">
+		<transtext>Ordner auf dem Server</transtext>
+	</transid>
+	<transid name="back">
+		<transtext>Zurück</transtext>
+	</transid>
+	<transid name="content_of_folder">
+		<transtext>Inhalt des Ordners</transtext>
+	</transid>
+	<transid name="header_serverfolders_desc">
+		<transtext>Um in den Ordner zu gelangen, genügt ein Klick auf das Ordner-Symbol. Ordner-Symbole OHNE grünen Pfeil haben keine Unterordner. Ein Klick auf den Namen zeigt den Inhalt an.</transtext>
+	</transid>
+	<transid name="upload_success">
+		<transtext><![CDATA[Die Datei(en) wurden erfolgreich aufgenommen!]]></transtext>
+	</transid>
+	<transid name="email_mail_server">
+		<transtext>Mail-Server</transtext>
+	</transid>
+	<transid name="email_address">
+		<transtext>eMail-Adresse</transtext>
+	</transid>
+	<transid name="email_subject">
+		<transtext>Betreff</transtext>
+	</transid>
+	<transid name="email_desc">
+		<transtext>Rufen Sie, mit den Angaben unten, ein eMail-Konto ab und lesen Sie den Anhang in Razuna ein. Aus Sicherheitsgründen muss im Betreff der eMail Ihre, hier angegebene, Betreff-Zeile vorhanden sein.</transtext>
+	</transid>
+	<transid name="button_show_emails">
+		<transtext>eMails anzeigen</transtext>
+	</transid>
+	<transid name="email_error">
+		<transtext>Es gab ein Problem sich mit dem angegeben eMail-Server zu verbinden. Bitte versuchen Sie es nochmals!</transtext>
+	</transid>
+	<transid name="button_add_email_attachment">
+		<transtext><![CDATA[Anhang der gewählten Nachricht(en) hinzufügen]]></transtext>
+	</transid>
+	<transid name="delete_email">
+		<transtext><![CDATA[Wollen Sie diese eMail wirklich löschen?<br><br>Hinweis: Die Nachricht wird komplett gelöscht und kann nicht wieder hergestellt werden!]]></transtext>
+	</transid>
+	<transid name="remove">
+		<transtext>Eintrag löschen</transtext>
+	</transid>
+	<transid name="ftp_desc">
+		<transtext><![CDATA[Geben Sie hier Ihre FTP-Angaben an, um Dateien die auf einem FTP-Server liegen in Razuna aufzunehmen]]></transtext>
+	</transid>
+	<transid name="ftp_server">
+		<transtext>FTP-Server</transtext>
+	</transid>
+	<transid name="ftp_passive">
+		<transtext>FTP Passive Modus</transtext>
+	</transid>
+	<transid name="yes">
+		<transtext>Ja</transtext>
+	</transid>
+	<transid name="no">
+		<transtext>Nein</transtext>
+	</transid>
+	<transid name="button_show_ftp">
+		<transtext>Am FTP-Server anmelden</transtext>
+	</transid>
+	<transid name="delete_record_desc">
+		<transtext><![CDATA[Wollen Sie diesen Datensatz wirklich löschen?<br><br>Hinweis: Der Datensatz wird komplett gelöscht und kann nicht wieder hergestellt werden!]]></transtext>
+	</transid>
+	<transid name="detail_view">
+		<transtext>Detail-Ansicht</transtext>
+	</transid>
+	<transid name="file_size">
+		<transtext>Dateigrösse</transtext>
+	</transid>
+	<transid name="created_by">
+		<transtext>Erstellt von</transtext>
+	</transid>
+	<transid name="located_in">
+		<transtext>Gespeichert in</transtext>
+	</transid>
+	<transid name="asset_information">
+		<transtext>Informationen</transtext>
+	</transid>
+	<transid name="asset_desc">
+		<transtext><![CDATA[Beschreibung & Stichwörter]]></transtext>
+	</transid>
+	<transid name="possible_distribution">
+		<transtext>Benutzen Sie eine der folgenden Verteilungs-Möglichkeiten...</transtext>
+	</transid>
+	<transid name="download_to_desktop">
+		<transtext>Datei runterladen</transtext>
+	</transid>
+	<transid name="send_with_email">
+		<transtext>Per eMail senden</transtext>
+	</transid>
+	<transid name="send_with_ftp">
+		<transtext>Auf einen FTP-Server laden</transtext>
+	</transid>
+	<transid name="or_do">
+		<transtext>...wählen Sie diese Aktionen</transtext>
+	</transid>
+	<transid name="add_to_collection">
+		<transtext>Einer bestehenden Kollektion hinzufügen</transtext>
+	</transid>
+	<transid name="move_file">
+		<transtext>Datei verschieben</transtext>
+	</transid>
+	<transid name="delete_asset">
+		<transtext>Datei löschen</transtext>
+	</transid>
+	<transid name="files_in_basket">
+		<transtext>Dateien in Ihrer Mappe</transtext>
+	</transid>
+	<transid name="button_edit_basket">
+		<transtext>Mappe bearbeiten</transtext>
+	</transid>
+	<transid name="my_favorites">
+		<transtext>Meine Favoriten</transtext>
+	</transid>
+	<transid name="from">
+		<transtext>Von</transtext>
+	</transid>
+	<transid name="to">
+		<transtext>An</transtext>
+	</transid>
+	<transid name="send_email">
+		<transtext>Send eMail</transtext>
+	</transid>
+	<transid name="attachment">
+		<transtext>Anhang</transtext>
+	</transid>
+	<transid name="send_as_zip">
+		<transtext><![CDATA[Datei(n) im Anhang in einem ZIP-Archiv mitsenden]]></transtext>
+	</transid>
+	<transid name="embed_url_in_message">
+		<transtext><![CDATA[URL to Datei in Nachricht einbauen]]></transtext>
+	</transid>
+	<transid name="message">
+		<transtext>Nachricht</transtext>
+	</transid>
+	<transid name="message_sent">
+		<transtext>Ihre Nachricht wurde erfolgreich gesendet</transtext>
+	</transid>
+	<transid name="ftp_upload_here">
+		<transtext>Datei in dieses Verzeichnis hochladen</transtext>
+	</transid>
+	<transid name="ftp_message_sent">
+		<transtext>Die Datei wurde erfolgreich auf den FTP-Server geladen</transtext>
+	</transid>
+	<transid name="action_with_selection">
+		<transtext>Aktion mit Selektion</transtext>
+	</transid>
+	<transid name="move">
+		<transtext>Verschieben</transtext>
+	</transid>
+	<transid name="delete">
+		<transtext>Löschen</transtext>
+	</transid>
+	<transid name="delete_record_desc_many">
+		<transtext><![CDATA[Wollen Sie die selektierten Datensätze wirklich löschen?<br><br>Hinweis: Diese werden komplett gelöscht und können nicht wieder hergestellt werden!]]></transtext>
+	</transid>
+	<transid name="convert">
+		<transtext>Datei konvertieren</transtext>
+	</transid>
+	<transid name="click_for_preview">
+		<transtext>Klicken Sie auf das Bild um die Vorschau abzuspielen</transtext>
+	</transid>
+	<transid name="size">
+		<transtext>Grösse</transtext>
+	</transid>
+	<transid name="format">
+		<transtext>Format</transtext>
+	</transid>
+	<transid name="preview">
+		<transtext>Vorschau</transtext>
+	</transid>
+	<transid name="converted_videos">
+		<transtext>Konvertierte Versionen</transtext>
+	</transid>
+	<transid name="videos_conversion_desc">
+		<transtext><![CDATA[Konvertieren Sie Ihre Original-Datei in andere Video-Formate. Zu jedem erstellten Format wird ein Standbild und die dazugehörige Video-Datei für Sie erzeugt.<br><br>Hinweis: Die Konvertierung Ihre Video-Datei findet im Hintergrund statt. Je nach Grösse des Videos kann dies eine geraume Zeit dauern. Aktualisieren Sie dieses Fenster nach ein paar Minuten nochmals.]]></transtext>
+	</transid>
+	<transid name="video_original">
+		<transtext>Original Video-Datei</transtext>
+	</transid>
+	<transid name="data_size">
+		<transtext>Datei-Grösse</transtext>
+	</transid>
+	<transid name="video_convert_to">
+		<transtext>Folgende neue Version erstellen</transtext>
+	</transid>
+	<transid name="videos_conversion_mac">
+		<transtext><![CDATA[Es sieht so aus, als ob Sie Razuna unter MacOS X als Server betreiben. Wir selber entwickeln und unterstützen MacOS X zu 100%, jedoch können wir die konvertierung der Video-Dateien unter MacOS X nicht komplett unterstützen. Wenn Sie dennoch einen Video konvertieren wird dieser ohne Ton konvertiert (Leider sind nicht alle Codecs für MacOS X unterstützt)]]></transtext>
+	</transid>
+	<transid name="images_conversion_desc">
+		<transtext><![CDATA[Konvertieren Sie Ihre Original-Datei in andere Bild-Formate. Zu jedem erstellten Format wird ein Thumbnail und die dazugehörige Bild-Datei für Sie erzeugt.]]></transtext>
+	</transid>
+	<transid name="images_original">
+		<transtext>Original Bild-Datei</transtext>
+	</transid>
+	<transid name="comma_seperated">
+		<transtext>Benutzen Sie ein Koma um die Wörter zu trennen</transtext>
+	</transid>
+	<transid name="results_files">
+		<transtext>Gefundene Dokumene</transtext>
+	</transid>
+	<transid name="results_images">
+		<transtext>Gefundene Bilder</transtext>
+	</transid>
+	<transid name="results_videos">
+		<transtext>Gefundene Filme</transtext>
+	</transid>
+	<transid name="show_remaining">
+		<transtext>Anzeige der restlichen Suchresultate</transtext>
+	</transid>
+	<transid name="folder">
+		<transtext>Ordner</transtext>
+	</transid>
+	<transid name="search_for">
+		<transtext>Suche nach</transtext>
+	</transid>
+	<transid name="search_for_type">
+		<transtext>Datei-Format</transtext>
+	</transid>
+	<transid name="day">
+		<transtext>Tag</transtext>
+	</transid>
+	<transid name="month">
+		<transtext>Monat</transtext>
+	</transid>
+	<transid name="year">
+		<transtext>Jahr</transtext>
+	</transid>
+	<transid name="today">
+		<transtext>Heute</transtext>
+	</transid>
+	<transid name="choose_language">
+		<transtext>Sprache wählen</transtext>
+	</transid>
+	<transid name="all_languages">
+		<transtext>Alle Sprachen</transtext>
+	</transid>
+	<transid name="all_documents">
+		<transtext>Alle Dokumente</transtext>
+	</transid>
+	<transid name="back_to_folder">
+		<transtext>Zurück zum Ordner</transtext>
+	</transid>
+	<transid name="download">
+		<transtext>Download</transtext>
+	</transid>
+	<transid name="delete_basket">
+		<transtext>Mappe löschen</transtext>
+	</transid>
+	<transid name="send_basket_email">
+		<transtext>Mappen emailen</transtext>
+	</transid>
+	<transid name="send_basket_ftp">
+		<transtext>Mappe per FTP übertragen</transtext>
+	</transid>
+	<transid name="save_basket">
+		<transtext><![CDATA[Mappe speichern & publizieren]]></transtext>
+	</transid>
+	<transid name="remove_basket_desc">
+		<transtext><![CDATA[Wollen Sie wirklich Ihre Arbeitsmappe leeren?]]></transtext>
+	</transid>
+	<transid name="empty_basket">
+		<transtext>Es befinden sich zur Zeit keine Dateien in Ihrer Mappe</transtext>
+	</transid>
+	<transid name="basket_email_send_desc">
+		<transtext>Ihre eMail wird mit den selektierten Daten in Ihrer Mappe verschickt. Um eine andere Wahl zu treffen müssen Sie dieses Fenter schliessen, die Daten auswählen und dieses Fenster nochmals öffnen.</transtext>
+	</transid>
+	<transid name="basket_save_as_zip">
+		<transtext>Mappe als Zip-Archiv speichern</transtext>
+	</transid>
+	<transid name="basket_save_as_zip_desc">
+		<transtext>Speichern Sie alle Daten Ihrer Mappe als Zip-Archiv. Ebenfalls können Sie den Ort zum Speichern der Datei angeben. Die Bilder und Videos werden in dem Format gespeichert, die Sie in der Mappe-Übersicht selektiert haben.</transtext>
+	</transid>
+	<transid name="basket_save_as_zip_button">
+		<transtext>Als ZIP-Achiv speichern</transtext>
+	</transid>
+	<transid name="basket_save_as_collection">
+		<transtext>Als Kollektion speichern</transtext>
+	</transid>
+	<transid name="basket_save_as_collection_desc">
+		<transtext>Sie können Ihren Mappe als eine Kollektion speichern. Diese steht Ihnen dann zur weiteren Verarbeitung zur Verfügung. Wenn Sie eine Vorlage angeben kann die Kollektion dadurch unter einer URL aufgerufen werden, ebenfalls steht die Kollektion im Razuna CMS zur Verfügung.</transtext>
+	</transid>
+	<transid name="basket_save_as_collection_button">
+		<transtext>Als Kollektion speichern</transtext>
+	</transid>
+	<transid name="basket_save_as_ext_collection">
+		<transtext>Einer bestehender Kollektion einfügen</transtext>
+	</transid>
+	<transid name="basket_save_as_ext_collection_desc">
+		<transtext>Speichern Sie die Mappe in eine bestehende Kollektion.</transtext>
+	</transid>
+	<transid name="basket_save_as_ext_collection_button">
+		<transtext>Kollektion auswählen</transtext>
+	</transid>
+	<transid name="save_in_this_folder">
+		<transtext>In diesen Ordner speichern</transtext>
+	</transid>
+	<transid name="name_of_zip">
+		<transtext>Name des Zip-Archives</transtext>
+	</transid>
+	<transid name="save_zip_done">
+		<transtext>Ihr ZIP-Archiv wurde erfolgreich gespeichert.</transtext>
+	</transid>
+	<transid name="move_in_this_folder">
+		<transtext>In diesen Ordner verschieben</transtext>
+	</transid>
+	<transid name="batch_selected_header">
+		<transtext>Stapelverarbeitung der markierten Daten</transtext>
+	</transid>
+	<transid name="batch">
+		<transtext>Stapelverarbeitung</transtext>
+	</transid>
+	<transid name="batch_done">
+		<transtext>Die Daten wurden mit Ihren Angaben aktualisiert!</transtext>
+	</transid>
+	<transid name="header_collections">
+		<transtext>Kollektionen</transtext>
+	</transid>
+	<transid name="header_collection_name">
+		<transtext>Kollektions-Name</transtext>
+	</transid>
+	<transid name="save_collection_done">
+		<transtext>Ihre Kollektion wurde erfolgreich erstellt.</transtext>
+	</transid>
+	<transid name="button_update">
+		<transtext>Aktualisieren</transtext>
+	</transid>
+	<transid name="collection_assets">
+		<transtext>Daten dieser Kollektion</transtext>
+	</transid>
+	<transid name="collection_remove_desc">
+		<transtext>Sind Sie sicher, dass Sie diese Datei aus Ihrer Kollektion entfernen wollen?</transtext>
+	</transid>
+	<transid name="collection_remove_button">
+		<transtext><![CDATA[Ja, Datei entfernen]]></transtext>
+	</transid>
+	<transid name="choose_collection_done">
+		<transtext><![CDATA[Die Datei(n) wurde/wurden der angegebenen Kollektion zugewiesen. Sie können nun dieses Fenster schliessen oder die Datei(n) einer anderen Kollektion zuweisen.]]></transtext>
+	</transid>
+	<transid name="update_collection_done">
+		<transtext><![CDATA[Ihre Kollektion wurde aktualisiert.]]></transtext>
+	</transid>
+	<transid name="scheduled_uploads">
+		<transtext>Geplante Uploads</transtext>
+	</transid>
+	<transid name="users">
+		<transtext>Benutzer</transtext>
+	</transid>
+	<transid name="groups">
+		<transtext>Gruppen</transtext>
+	</transid>
+	<transid name="categories">
+		<transtext>Kategorien</transtext>
+	</transid>
+	<transid name="log">
+		<transtext>Log</transtext>
+	</transid>
+	<transid name="user_list">
+		<transtext>Benutzer</transtext>
+	</transid>
+	<transid name="user_company">
+		<transtext>Firma</transtext>
+	</transid>
+	<transid name="remove_selected">
+		<transtext>Ausgewählte Löschen</transtext>
+	</transid>
+	<transid name="user_search">
+		<transtext>Suchen</transtext>
+	</transid>
+	<transid name="quicksearch">
+		<transtext>Schnellsuche</transtext>
+	</transid>
+	<transid name="one_field_fill">
+		<transtext>Bitte geben Sie mind. einen Wert in den Feldern ein!</transtext>
+	</transid>
+	<transid name="please_wait">
+		<transtext>Bitte warten</transtext>
+	</transid>
+	<transid name="searchresults_header">
+		<transtext>Suchresultate</transtext>
+	</transid>
+	<transid name="clear_search">
+		<transtext>Zurück zur Liste</transtext>
+	</transid>
+	<transid name="user_add">
+		<transtext>Benutzer erfassen</transtext>
+	</transid>
+	<transid name="user_edit">
+		<transtext>Benutzer bearbeiten</transtext>
+	</transid>
+	<transid name="email">
+		<transtext>eMail</transtext>
+	</transid>
+	<transid name="user_active">
+		<transtext>Benutzer kann sich anmelden</transtext>
+	</transid>
+	<transid name="password_confirm">
+		<transtext>Passwort bestätigen</transtext>
+	</transid>
+	<transid name="error_password">
+		<transtext>Das Passwort stimmt nicht überein. Bitte versuchen Sie es nochmals.</transtext>
+	</transid>
+	<transid name="theuser">
+		<transtext>Benutzer</transtext>
+	</transid>
+	<transid name="user_first_name">
+		<transtext>Vorname</transtext>
+	</transid>
+	<transid name="user_last_name">
+		<transtext>Nachname</transtext>
+	</transid>
+	<transid name="salutation">
+		<transtext>Anrede</transtext>
+	</transid>
+	<transid name="user_street">
+		<transtext>Strasse</transtext>
+	</transid>
+	<transid name="user_street_nr">
+		<transtext>Strassen-Nr.</transtext>
+	</transid>
+	<transid name="user_city">
+		<transtext>Ort</transtext>
+	</transid>
+	<transid name="user_zip">
+		<transtext>PLZ</transtext>
+	</transid>
+	<transid name="user_country">
+		<transtext>Land</transtext>
+	</transid>
+	<transid name="user_tel">
+		<transtext>Telefon</transtext>
+	</transid>
+	<transid name="user_fax">
+		<transtext>Fax</transtext>
+	</transid>
+	<transid name="user_mobile">
+		<transtext>Mobil</transtext>
+	</transid>
+	<transid name="user_name">
+		<transtext>Benutzername</transtext>
+	</transid>
+	<transid name="intranet_area">
+		<transtext>Media Asset Management-Bereich</transtext>
+	</transid>
+	<transid name="user_intranet_area">
+		<transtext>Benutzer darf sich am Media Asset Management anmelden</transtext>
+	</transid>
+	<transid name="allowedinadmin">
+		<transtext>Benutzer ist Admin-Benutzer</transtext>
+	</transid>
+	<transid name="adminarea">
+		<transtext>Administrations-Bereich</transtext>
+	</transid>
+	<transid name="group_description_SystemAdmin">
+		<transtext>System-Gruppe</transtext>
+	</transid>
+	<transid name="group_description_Administrator">
+		<transtext>System-Gruppe</transtext>
+	</transid>
+	<transid name="hosts">
+		<transtext><![CDATA[Kunden/Domainen/Host]]></transtext>
+	</transid>
+	<transid name="groupnumber_header_new">
+		<transtext>Gruppe erfassen</transtext>
+	</transid>
+	<transid name="group_list">
+		<transtext>Liste der Gruppen</transtext>
+	</transid>
+	<transid name="groups_edit">
+		<transtext>Gruppe bearbeiten</transtext>
+	</transid>
+	<transid name="scheduled_uploads">
+		<transtext>Geplante Uploads</transtext>
+	</transid>
+	<transid name="scheduled_uploads_new">
+		<transtext>Neuer geplanter Upload</transtext>
+	</transid>
+	<transid name="scheduled_uploads_edit">
+		<transtext>Geplanter Upload bearbeiten</transtext>
+	</transid>
+	<transid name="scheduled_uploads_log">
+		<transtext>Log Daten</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_run_cap">
+		<transtext>Geplanter Task ausführen</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_run_desc">
+		<transtext>Diese Schaltfläche starten den geplanten Prozess umgehend. Dies kann eine Weile dauern, üben Sie sich deshalb in ein wenig Geduld...</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_pause_cap">
+		<transtext>Geplanter Task pausieren</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_pause_desc">
+		<transtext>Diese Schaltfläche pausiert den gewünschten geplanten Task umgehend.</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_resume_cap">
+		<transtext>Geplanten Task wiederaufnehmen</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_resume_desc">
+		<transtext>Diese Schaltfläche nimmt die Ausführung des geplanten Task umgehend wieder auf.</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_edit_cap">
+		<transtext>Geplanten Task anpassen</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_edit_desc">
+		<transtext>Mit dem Betätigen dieser Schaltfläche kann der geplante Task bearbeitet werden.</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_delete_cap">
+		<transtext>Geplanten Task löschen</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_delete_desc">
+		<transtext>Mit dem Betätigen dieser Schaltfläche wird der geplante Task gelöscht.</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_mail_cap">
+		<transtext>Mail Verbindung überprüfen</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_mail_desc">
+		<transtext>Mit dem Betätigen dieser Schaltfläche wird die Mailverbindung überprüft.</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_ftp_cap">
+		<transtext>FTP Verbindung überprüfen</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_ftp_desc">
+		<transtext>Mit dem Betätigen dieser Schaltfläche wird die FTP-Verbindung überprüft und der gewünschte FTP Ordner kann ausgewählt werden.</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_folder_cap">
+		<transtext>Ordner auswählen</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_folder_desc">
+		<transtext>Mit dem Betätigen dieser Schaltfläche kann der gewünschte DAM-Ordner, wo die geplanten Uploads gespeichert werden sollen, gewählt werden.</transtext>
+	</transid>
+	<transid name="scheduled_uploads_log_search_cap">
+		<transtext>Log-Einträge finden</transtext>
+	</transid>
+	<transid name="scheduled_uploads_log_search_desc">
+		<transtext>Mit der Eingabe/Auswahl der Suchfelder reduzieren Sie die Anzahl der angezeigten Log-Einträge.</transtext>
+	</transid>
+	<transid name="scheduled_uploads_info_text1">
+		<transtext>Wenn Sie einen geplanten Task monatlich an einem Tag im Bereich von 28-31 tätigen, wird das System das folgende machen:</transtext>
+	</transid>
+	<transid name="scheduled_uploads_info_text2">
+		<transtext>Wenn Sie einen monatlichen Task planen, der am Monatsletzten laufen soll, wird dieser in allen Monaten am letzten Tag ausgeführt. Wenn Sie beispielsweise einen Task planen, der am 31. Januar anläuft, wird dieser am 31. Januar, am 28. oder 29. Februar, am 31. März usw. ausgeführt.</transtext>
+	</transid>
+	<transid name="scheduled_uploads_info_text3">
+		<transtext>Wenn Sie einen monatlichen Task planen, der am 29. oder 30. des Monats laufen soll, der Task wird ausgeführt am bestimmten Tag in allen Monaten welche 30 oder 31 Tage haben, sowie am letzten Tag im Februar. Wenn Sie beispielsweise einen monatlichen Task per 30. Januar erfassen, wird dieser am 30. Januar, 28. oder 29. Februar, 30. März, 30. April usw. ausgeführt.</transtext>
+	</transid>
+	<transid name="scheduled_uploads_info_text4">
+		<transtext>Wenn Sie einen einmaligen Task planen, dessen Anfangszeit in der Vergangenheit liegt und er Task noch nicht ausgeführt wurde, so läuft dieser augenblicklich ab. Ein wiederkehrender Task mit Anfangszeit in der Vergangenheit wird am nächstmöglichen Zeitpunkt in der Zukunft erstmals aufgeführt.</transtext>
+	</transid>
+	<transid name="scheduled_uploads_actions">
+		<transtext>Aktionen</transtext>
+	</transid>
+	<transid name="scheduled_uploads_task_name">
+		<transtext>Task Name</transtext>
+	</transid>
+	<transid name="scheduled_uploads_method">
+		<transtext>Methode</transtext>
+	</transid>
+	<transid name="scheduled_uploads_server">
+		<transtext>Server</transtext>
+	</transid>
+	<transid name="scheduled_uploads_mail">
+		<transtext>Mail</transtext>
+	</transid>
+	<transid name="scheduled_uploads_ftp">
+		<transtext>FTP</transtext>
+	</transid>
+	<transid name="scheduled_uploads_server_folder">
+		<transtext>Server Ordner</transtext>
+	</transid>
+	<transid name="scheduled_uploads_server_recurse">
+		<transtext>Unterordner miteinbeziehen?</transtext>
+	</transid>
+	<transid name="scheduled_uploads_mail_server">
+		<transtext>POP Server</transtext>
+	</transid>
+	<transid name="scheduled_uploads_mail_user">
+		<transtext>Benutzername</transtext>
+	</transid>
+	<transid name="scheduled_uploads_mail_pass">
+		<transtext>Passwort</transtext>
+	</transid>
+	<transid name="scheduled_uploads_mail_subject">
+		<transtext>Betreff</transtext>
+	</transid>
+	<transid name="scheduled_uploads_ftp_server">
+		<transtext>Server</transtext>
+	</transid>
+	<transid name="scheduled_uploads_ftp_user">
+		<transtext>Benutzername</transtext>
+	</transid>
+	<transid name="scheduled_uploads_ftp_pass">
+		<transtext>Passwort</transtext>
+	</transid>
+	<transid name="scheduled_uploads_ftp_folder">
+		<transtext>Ordner</transtext>
+	</transid>
+	<transid name="scheduled_uploads_ftp_passive">
+		<transtext>Passiv-Modus</transtext>
+	</transid>
+	<transid name="scheduled_uploads_duration">
+		<transtext>Dauer</transtext>
+	</transid>
+	<transid name="scheduled_uploads_start_date">
+		<transtext>Anfangsdatum</transtext>
+	</transid>
+	<transid name="scheduled_uploads_end_date">
+		<transtext>Enddatum(optional)</transtext>
+	</transid>
+	<transid name="scheduled_uploads_frequency">
+		<transtext>Häufigkeit</transtext>
+	</transid>
+	<transid name="scheduled_uploads_frequency_onetime">
+		<transtext>Einmalig</transtext>
+	</transid>
+	<transid name="scheduled_uploads_frequency_recurring">
+		<transtext>Wiederkehrend</transtext>
+	</transid>
+	<transid name="scheduled_uploads_frequency_daily_every">
+		<transtext>Täglich alle</transtext>
+	</transid>
+	<transid name="scheduled_uploads_frequency_at">
+		<transtext>um</transtext>
+	</transid>
+	<transid name="scheduled_uploads_frequency_daily">
+		<transtext>Täglich</transtext>
+	</transid>
+	<transid name="scheduled_uploads_frequency_weekly">
+		<transtext>Wöchentlich</transtext>
+	</transid>
+	<transid name="scheduled_uploads_frequency_monthly">
+		<transtext>Monatlich</transtext>
+	</transid>
+	<transid name="scheduled_uploads_start_time">
+		<transtext>Anfangszeit</transtext>
+	</transid>
+	<transid name="scheduled_uploads_end_time">
+		<transtext>Endzeit</transtext>
+	</transid>
+	<transid name="scheduled_uploads_zip_archive">
+		<transtext>ZIP Archiv</transtext>
+	</transid>
+	<transid name="scheduled_uploads_extract_zip">
+		<transtext>ZIP Archiv extrahieren</transtext>
+	</transid>
+	<transid name="scheduler_add">
+		<transtext>Geplanter Upload-Task hinzufügen</transtext>
+	</transid>
+	<transid name="scheduler_update">
+		<transtext>Geplanter Upload-Task aktualisieren</transtext>
+	</transid>
+	<transid name="scheduler_folder_back_cap">
+		<transtext>Vorheriger Ordner</transtext>
+	</transid>
+	<transid name="scheduler_folder_back_desc">
+		<transtext>Einen Ordner nach oben navigieren.</transtext>
+	</transid>
+	<transid name="scheduler_close_cap">
+		<transtext>Fenster schliessen</transtext>
+	</transid>
+	<transid name="scheduler_close_desc">
+		<transtext>Mit diesem Symbol wird dieses Fenster umgehend geschlossen.</transtext>
+	</transid>
+	<transid name="scheduler_folder_select_cap">
+		<transtext>Diesen Ordner auswählen</transtext>
+	</transid>
+	<transid name="scheduler_folder_select_desc">
+		<transtext>Mit diesem Symbold wird der gewünschte Ordner in den geplanten Task übernommen.</transtext>
+	</transid>
+	<transid name="scheduler_ftp_intro1">
+		<transtext>Wählen Sie bitte den gewünschten FTP-Ordner, woher der geplante Task die Dateien automatisch ermitteln soll, mittels anklicken des Symbols rechts des Ordnernamens.</transtext>
+	</transid>
+	<transid name="scheduler_ftp_intro2">
+		<transtext>Mittels klicken auf den Ordnernamen kann durch die Orderstruktur geblättert werden.</transtext>
+	</transid>
+	<transid name="scheduler_folder_intro1">
+		<transtext>Wählen Sie bitten den gewünschten Ordner, wo der geplante Task die automatisch geladenen Dateien speichern soll, mittels anklicken des Ordner-Symbols rechs des Ordnernamens.</transtext>
+	</transid>
+	<transid name="scheduler_folder_intro2">
+		<transtext>Mittels klicken auf den Ordnernamen kann durch die Orderstruktur geblättert werden.</transtext>
+	</transid>
+	<transid name="scheduler_mail_intro1">
+		<transtext>Dies ist nur eine Information betreffend der Verbindung zum gewünschten Email-Konto.</transtext>
+	</transid>
+	<transid name="scheduler_mail_intro2">
+		<transtext>Die aufgelistetend Email (sofern vorhanden) sind nur zur Ansicht.</transtext>
+	</transid>
+	<transid name="success_deleted">
+		<transtext>Der Datensatz wurde erfolgreich gelöscht!</transtext>
+	</transid>
+	<transid name="success_paused">
+		<transtext>Der geplante Task wurde erfolgreich pausiert!</transtext>
+	</transid>
+	<transid name="success_resumed">
+		<transtext>Der geplante Task wurde erfolgreich wiederaufgenommen!</transtext>
+	</transid>
+	<transid name="success_run">
+		<transtext>Der geplante Task wurde erfolgreich ausgeführt!</transtext>
+	</transid>
+	<transid name="sched_error">
+		<transtext>Ein Fehler trat während der Vearbeitung auf. Die Fehlerbeschreibung finden Sie in der Log-Datei!</transtext>
+	</transid>
+	<transid name="sched_actions">
+		<transtext>Aktionen</transtext>
+	</transid>
+	<transid name="calendar_day_names">
+		<transtext>So,Mo,Di,Mi,Do,Fr,Sa</transtext>
+	</transid>
+	<transid name="calendar_month_names">
+		<transtext>Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember</transtext>
+	</transid>
+	<transid name="sched_msg_task_name">
+		<transtext>Gebene Sie bitte eine Bezeichnung für diesen geplanten Upload-Task ein.</transtext>
+	</transid>
+	<transid name="sched_msg_choose_folder">
+		<transtext>Wählen Sie bitte einen Ordner aus, wo der geplante Upload-Task die Dateien speichern soll.</transtext>
+	</transid>
+	<transid name="sched_msg_server">
+		<transtext>Wählen Sie bitte einen Server-Ordner!</transtext>
+	</transid>
+	<transid name="sched_msg_ftp">
+		<transtext>Geben Sie bitte die benötigten Felder für den FTP Server, Benutzername und Passwort ein!</transtext>
+	</transid>
+	<transid name="sched_msg_mail">
+		<transtext>Geben Sie bitte die benötigten Felder für den POP Server, Benutzername und Passwort ein!</transtext>
+	</transid>
+	<transid name="hours">
+		<transtext>Stunden</transtext>
+	</transid>
+	<transid name="minutes">
+		<transtext>Minuten</transtext>
+	</transid>
+	<transid name="seconds">
+		<transtext>Sekunden</transtext>
+	</transid>
+	<transid name="sched_no_emails_found">
+		<transtext>Keine passenden Emails gefunden!</transtext>
+	</transid>
+	<transid name="sched_dam_folder">
+		<transtext>DAM Ordner</transtext>
+	</transid>
+	<transid name="sched_server_recursive">
+		<transtext>Rekursiv</transtext>
+	</transid>
+	<transid name="sched_server_deletemove">
+		<transtext>Erfolgreich hochgeladene Dateien löschen oder in einen temporären Ordner verschieben?</transtext>
+	</transid>
+	<transid name="sched_server_files">
+		<transtext>Dateien</transtext>
+	</transid>
+	<transid name="sched_server_delete">
+		<transtext>Löschen</transtext>
+	</transid>
+	<transid name="sched_server_move">
+		<transtext>Verschieben</transtext>
+	</transid>
+	<transid name="choose_location">
+		<transtext>Zielordner wählen</transtext>
+	</transid>
+	<transid name="store_in_this_folder">
+		<transtext>Alle Daten für den geplanten Zeit-Upload in this Ordner speichern</transtext>
+	</transid>
+	<transid name="scheduler_ftp_desc">
+		<transtext>Mit dem FTP-Server verbinden und Ordner wählen</transtext>
+	</transid>
+	<transid name="date">
+		<transtext>Datum</transtext>
+	</transid>
+	<transid name="time">
+		<transtext>Zeit</transtext>
+	</transid>
+	<transid name="action">
+		<transtext>Aktion</transtext>
+	</transid>
+	<transid name="delete_log">
+		<transtext>Log-Eintragungen löschen</transtext>
+	</transid>
+	<transid name="log_search_header">
+		<transtext><![CDATA[Log (Dateien/Suche/Ordner)]]></transtext>
+	</transid>
+	<transid name="log_users_header">
+		<transtext><![CDATA[Log (Benutzer)]]></transtext>
+	</transid>
+	<transid name="show_only">
+		<transtext>Nur diese Aktion anzeigen</transtext>
+	</transid>
+	<transid name="please_select">
+		<transtext>Bitte treffen Sie eine Auswahl</transtext>
+	</transid>
+	<transid name="reset">
+		<transtext>Zurücksetzen</transtext>
+	</transid>
+	<transid name="next">
+		<transtext>Vor</transtext>
+	</transid>
+	<transid name="select_log">
+		<transtext>Log-Datei auswählen</transtext>
+	</transid>
+	<transid name="log_type_of_file">
+		<transtext>Daten-Typ</transtext>
+	</transid>
+	<transid name="log_header_assets">
+		<transtext>Dateien</transtext>
+	</transid>
+	<transid name="log_header_searches">
+		<transtext>Suche</transtext>
+	</transid>
+	<transid name="log_header_folders">
+		<transtext>Ordner</transtext>
+	</transid>
+	<transid name="log_header_searches_sum">
+		<transtext><![CDATA[Suche (Zusammengefasst)]]></transtext>
+	</transid>
+	<transid name="assets_found">
+		<transtext>Gefundene</transtext>
+	</transid>
+	<transid name="assets_type">
+		<transtext>Art der Datei</transtext>
+	</transid>
+	<transid name="searched_for">
+		<transtext>Suchbegriff</transtext>
+	</transid>
+	<transid name="header_">
+		<transtext></transtext>
+	</transid>
+	<transid name="passwordsent">
+		<transtext>Wir haben Ihr Passwort an Ihre eMail-Adresse gesendet.</transtext>
+	</transid>
+	<transid name="youremail">
+		<transtext>Ihre eMail-Adresse</transtext>
+	</transid>
+	<transid name="buttonsendpassword">
+		<transtext>Jetzt Passwort zusenden</transtext>
+	</transid>
+	<transid name="errorretrievingpassword">
+		<transtext><![CDATA[Leider konnten wir Ihre eMail-Adresse in unserer Datenbank nicht finden. Eventuell haben Sie sich mit einer anderen eMail-Adresse angemeldet?]]></transtext>
+	</transid>
+	<transid name="errornoemailaddress">
+		<transtext>Bitte geben Sie eine email-Adresse an</transtext>
+	</transid>
+	<transid name="headerretrievepassword">
+		<transtext>Passwort zusenden</transtext>
+	</transid>
+	<transid name="cancel">
+		<transtext>Abbrechen</transtext>
+	</transid>
+	<transid name="button_add_selected">
+		<transtext>Ausgewählte Daten hinzufügen</transtext>
+	</transid>
+	<transid name="custom_fields_header">
+		<transtext>Eigene Felder</transtext>
+	</transid>
+	<transid name="custom_fields_desc">
+		<transtext><![CDATA[Hier können Sie Ihre eigenen Felder angeben. Diese Felder erscheinen dann bei der Detail-Anzeige Ihrer Daten. Die Angaben werden indexiert und bei der Suche berücksichtigt.]]></transtext>
+	</transid>
+	<transid name="custom_fields">
+		<transtext>Bestehende Felder</transtext>
+	</transid>
+	<transid name="custom_fields_new">
+		<transtext>Eigenes Feld hinzufügen</transtext>
+	</transid>
+	<transid name="enabled">
+		<transtext>Verfügbar</transtext>
+	</transid>
+	<transid name="custom_field_type">
+		<transtext>Feld Typ</transtext>
+	</transid>
+	<transid name="custom_field_for">
+		<transtext>Verfügbar für...</transtext>
+	</transid>
+	<transid name="only_images">
+		<transtext>Bilder</transtext>
+	</transid>
+	<transid name="only_videos">
+		<transtext>Videos</transtext>
+	</transid>
+	<transid name="only_documents">
+		<transtext>Dokumente</transtext>
+	</transid>
+	<transid name="edit">
+		<transtext>Bearbeiten</transtext>
+	</transid>
+	<transid name="custom_fields_asset">
+		<transtext>Zusätzliche Angaben</transtext>
+	</transid>
+	<transid name="show_only_for">
+		<transtext>Anzeigen bei</transtext>
+	</transid>
+	<transid name="convert_button">
+		<transtext>Jetzt konvertieren</transtext>
+	</transid>
+	<transid name="convert_feedback">
+		<transtext><![CDATA[We konvertieren nun die Original-Datei in das/die gewünschte(n) Format(e). Sie erhalten eine eMail sobald der Hintergrundprozess beendet ist und die neuen Daten zur Verfügung stehen.]]></transtext>
+	</transid>
+	<transid name="share_header">
+		<transtext>Share It</transtext>
+	</transid>
+	<transid name="share_desc">
+		<transtext><![CDATA["Share" heisst, dass Sie diese Datei unter einer "normalen" URL aufrufen können und damit alleln zugänglich machen.<br><br>Hinweis: Damit diese Datei im CMS oder anderen Systemen benutzt werden kann, müssen Sie diese Datei "sharen"! Wenn Sie "sharing" aktivieren werden alle Versionen die von dieser Datei abstammen ebenfalls "geshared".]]></transtext>
+	</transid>
+	<transid name="only_me">
+		<transtext>Nur ich</transtext>
+	</transid>
+</translations>

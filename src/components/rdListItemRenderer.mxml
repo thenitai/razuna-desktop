@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer
+    xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:s="library://ns.adobe.com/flex/spark"
+    xmlns:mx="library://ns.adobe.com/flex/halo">
+    
+    <s:states>
+        <s:State name="normal"/>
+        <s:State name="hovered"/>
+        <s:State name="selected" />
+    </s:states>
+    
+    <s:layout>
+        <s:VerticalLayout/>
+    </s:layout>
+    
+    <s:HGroup verticalAlign="middle" >
+ 		<s:VGroup width="320" height="40" x="4">
+	        <s:RichText text="{data.name}" toolTip="{data.url}" width="250" height="15" color.hovered="0x1313cd" color.selected="0x000000" verticalAlign="bottom"/>
+	        <s:RichText text="[{data.size} bytes]" width="130" height="15" verticalAlign="bottom"/>
+ 		</s:VGroup>
+		<s:BitmapImage source="{data.url}" width="50" height="40"  alpha.hovered=".5"/>
+	
+    </s:HGroup>
+</s:ItemRenderer>

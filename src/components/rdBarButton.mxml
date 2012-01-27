@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:ai="http://ns.adobe.com/ai/2008">
+	<s:transitions>
+		<s:Transition fromState="down" toState="up" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{labelDisplay}">
+					<s:Move autoCenterTransform="true" duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+		<s:Transition fromState="disabled" toState="up" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{labelDisplay}">
+					<s:Move autoCenterTransform="true" duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+	</s:transitions>
+	<s:states>
+		<s:State name="up"/>
+		<s:State name="over"/>
+		<s:State name="down"/>
+		<s:State name="disabled"/>
+	</s:states>
+	<fx:Metadata>[HostComponent("spark.components.Button")]</fx:Metadata>
+	<s:Group id="group4" d:userLabel="barButtonGroup" alpha.over="1">
+		<s:Group d:id="3" id="group3" d:userLabel="barButton">
+			<s:Rect width="109" height="24" ai:knockout="0">
+				<s:fill>
+					<s:LinearGradient x="270.5" y="0.741211" scaleX="21.557" rotation="90">
+						<s:entries>
+							<s:GradientEntry color="0x777777" ratio="0"/>
+							<s:GradientEntry color="0x0e0e0e" ratio="1"/>
+						</s:entries>
+					</s:LinearGradient>
+				</s:fill>
+			</s:Rect>
+		</s:Group>
+		<s:RichText width="100" height="14" y="5" color="#d8d8d8" x="21" 
+					fontSize="14" fontFamily="Verdana" 
+					id="labelDisplay" fontWeight="bold" fontStyle="normal" 
+					d:userLabel="barText" color.over="#ffffff" color.down="#ffffff" 
+					x.down="22" y.down="6" color.disabled="#808080">
+			<s:content><s:p><s:span>txte</s:span></s:p><s:p></s:p></s:content>
+		</s:RichText>
+	</s:Group>
+</s:Skin>

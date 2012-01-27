@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:ai="http://ns.adobe.com/ai/2008">
+	<s:states>
+		<s:State name="up"/>
+		<s:State name="over"/>
+		<s:State name="down"/>
+		<s:State name="disabled"/>
+	</s:states>
+	<fx:Metadata>[HostComponent("spark.components.Button")]</fx:Metadata>
+	<s:Group id="group5" d:userLabel="infoButton">
+		<s:Rect x="1.5" y="1.5" width="17" height="17" ai:knockout="0" id="rect3">
+			<s:stroke>
+				<s:SolidColorStroke color="0xffffff" weight="1" joints="miter" miterLimit="4" caps="none"/>
+			</s:stroke>
+		</s:Rect>
+		<s:Path winding="nonZero" ai:knockout="0" data="M 3.817 0.523 L 0.516 0.523 L 0.516 10.428 L 7.355 10.428 L 7.355 9.249" x="5" y="5" id="path1">
+			<s:stroke>
+				<s:SolidColorStroke color="0xffffff" weight="1" joints="miter" miterLimit="4" caps="none"/>
+			</s:stroke>
+		</s:Path>
+		<s:Line xTo="2" ai:knockout="0" x="6.5" y="7.5" id="line3">
+			<s:stroke>
+				<s:SolidColorStroke color="0xffffff" weight="1" joints="miter" miterLimit="4" caps="none"/>
+			</s:stroke>
+		</s:Line>
+		<s:Line xTo="3" ai:knockout="0" x="6.5" y="9.5" id="line2">
+			<s:stroke>
+				<s:SolidColorStroke color="0xffffff" weight="1" joints="miter" miterLimit="4" caps="none"/>
+			</s:stroke>
+		</s:Line>
+		<s:Line xTo="3" ai:knockout="0" x="6.5" y="11.5" id="line1">
+			<s:stroke>
+				<s:SolidColorStroke color="0xffffff" weight="1" joints="miter" miterLimit="4" caps="none"/>
+			</s:stroke>
+		</s:Line>
+		<s:Path winding="nonZero" ai:knockout="0" id="path3" data="M 10.45 6.481" y="0.5" x="0.5">
+			<s:stroke>
+				<s:SolidColorStroke color="0xffffff" weight="1" joints="miter" miterLimit="4" caps="none"/>
+			</s:stroke>
+		</s:Path>
+		<s:Path winding="nonZero" ai:knockout="0" data="M 5.177 9.913 L 0.5 1.581 C 0.5 1.581 0.695 0.48 2.033 0.48" x="10" y="5" id="path2">
+			<s:stroke>
+				<s:SolidColorStroke color="0xffffff" weight="1" joints="miter" miterLimit="4" caps="none"/>
+			</s:stroke>
+		</s:Path>
+	</s:Group>
+</s:Skin>

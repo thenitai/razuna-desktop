@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+*
+* Copyright (C) 2005-2011 Razuna ltd.
+*
+* This file is part of Razuna - Enterprise Digital Asset Management.
+*
+* Razuna is free software: you can redistribute it and/or modify
+* it under the terms of the GNU Affero Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* Razuna is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU Affero Public License for more details.
+*
+* You should have received a copy of the GNU Affero Public License
+* along with Razuna. If not, see <http://www.gnu.org/licenses/>.
+*
+* You may restribute this Program with a special exception to the terms
+* and conditions of version 3.0 of the AGPL as described in Razuna's
+* FLOSS exception. You should have received a copy of the FLOSS exception
+* along with Razuna. If not, see <http://www.razuna.com/licenses/>.
+* 
+* Written by Bruce LANE http://www.batchass.fr
+* July 22, 2011 version
+
+-->
+<s:WindowedApplication 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+    xmlns:d="http://ns.adobe.com/fxg/2008/dt"
+    xmlns:th="http://ns.adobe.com/thermo/2009" 
+    xmlns:ai="http://ns.adobe.com/ai/2008" 
+    xmlns:components="components.*"
+    creationComplete="init()" 
+	currentStateChanging="gb.currentStateChangingHandler(event)"
+	currentStateChange="gb.currentStateChangeHandler(event)"
+    width="470" height="520" width.LoggedIn="900" backgroundColor="#AAAAAA" 
+    >
+	<s:filters>
+		<s:DropShadowFilter id="dropShadowFilter" blurX="10" hideObject="false" distance="6" blurY="10" inner="false" color="0x000000" strength="1" alpha="0.71" quality="2" knockout="false" angle="45.0"/>
+	</s:filters>
+	<s:transitions>
+
+		<s:Transition fromState="LoggedIn" toState="Hosted" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{loginComponent}">
+					<s:Move autoCenterTransform="true" duration="0"/>
+					<s:Fade duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+
+		<s:Transition fromState="Hosted" toState="LoggedIn" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{loginComponent}">
+					<s:Fade duration="250"/>
+				</s:Parallel>
+				<s:Parallel target="{assetsComponent}">
+					<s:Fade duration="250"/>
+				</s:Parallel>
+
+				<!--<s:Parallel target="{imageFlip}">
+					<s:Fade duration="250" startDelay="250"/>
+				</s:Parallel>-->
+			</s:Parallel>
+		</s:Transition>
+		
+		<s:Transition fromState="LoggedIn" toState="Collections" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{foldersComponent}">
+					<s:Fade duration="250"/>
+				</s:Parallel>
+				<s:Parallel target="{collectionsPanel}">
+					<s:Fade duration="250"/>
+				</s:Parallel>
+
+			</s:Parallel>
+		</s:Transition>
+	</s:transitions>
+<fx:Script source="Main.as" />
+
+	<s:states>
+		<s:State name="Startup"/>
+		<s:State name="LoggedIn"/>
+		<s:State name="Upload"/>
+		<s:State name="Collections"/>
+		<s:State name="Settings"/>
+	</s:states>
+	<s:Rect x="1" y="89" height="611" width="898" id="rect1" d:userLabel="greyBackground">
+		<s:fill>
+			<s:SolidColor color="#adadad"/>
+		</s:fill>
+	</s:Rect>
+	<fx:DesignLayer d:id="2" d:userLabel="Calque 1">
+		<s:Group d:id="3" x="1" y="65" id="group1" d:userLabel="greyBar">
+			<s:Rect width="898" height="24" ai:knockout="0">
+				<s:fill>
+					<s:LinearGradient x="270.5" y="0.741211" scaleX="21.5574" rotation="90">
+						<s:GradientEntry color="0xe4e3e3" ratio="0"/>
+						<s:GradientEntry color="0xadadad" ratio="1"/>
+					</s:LinearGradient>
+				</s:fill>
+			</s:Rect>
+		</s:Group>
+		<s:Group d:id="3" x="1" y="41" id="group0" d:userLabel="blackBar" focusColor="#535455" rollOverColor="#B3B3B4">
+			<s:Rect width="898" height="24" ai:knockout="0">
+				<s:fill>
+					<s:LinearGradient x="270.5" y="0.741211" scaleX="21.557" rotation="90">
+						<s:entries>
+							<s:GradientEntry color="0x777777" ratio="0"/>
+							<s:GradientEntry color="0x0e0e0e" ratio="1"/>
+						</s:entries>
+					</s:LinearGradient>
+				</s:fill>
+			</s:Rect>
+            <s:Button includeIn="Collections,LoggedIn,Upload" skinClass="components.rdBarButton" id="browseBtn"  
+				x="10" y="0" label="Explore"
+				toolTip="Explore your assets in your Razuna DAM" click="currentState = 'LoggedIn'" />
+			
+			<mx:VRule includeIn="Collections,LoggedIn,Upload" x="120" y="1" height="21"/>
+			<s:Button skinClass="components.rdBarButton" id="collectionsBtn" includeIn="Collections,LoggedIn,Upload"
+				toolTip="Explore the collections of your Razuna DAM"
+				x="121" y="0" label="Collections" click="currentState = 'Collections'" />
+			<mx:VRule includeIn="Collections,LoggedIn,Upload" x="245" y="1" height="21" />
+			<s:Button skinClass="components.rdBarButton" id="uploadBtn" includeIn="Collections,LoggedIn,Upload" 
+				x="249" y="0" label="Upload" click="currentState = 'Upload' " 
+				toolTip="Manage the upload queue of assets to your Razuna DAM" width="60"/>
+
+			<!--<mx:VRule id="leftRule" visible="false" x="340" x.Startup="246" y="1" height="21" />
+			<s:Button skinClass="components.rdBarButton" id="updateBtn" visible="false" 
+					  x="342" x.Startup="152" y="0" label="Update" click="update()" 
+					  toolTip="A new version of Razuna Desktop is available!" width="68"/>
+			<mx:VRule id="rightRule" visible="false" x="436" x.Startup="246" y="1" height="21" />-->
+			
+			<s:Button skinClass="components.rdBarButton" id="feedbackBtn" 
+				click="navigateToURL(new URLRequest('http://support.razuna.com'),'_blank')" 
+				toolTip="Send us feedback about this software."
+				includeIn="Collections,LoggedIn,Upload" x="440" y="0" label="FeedBack"/>
+			<mx:VRule includeIn="Collections,LoggedIn,Upload" x="550" y="1" height="21"/>
+			<s:Button skinClass="components.rdBarButton" id="logoutBtn" click="loginComponent.logout()" 
+					  includeIn="Collections,LoggedIn,Upload" 
+				x="560" y="0" label="Logout" width.Upload="92" width.Collections="92"
+				toolTip="Log out of your Razuna DAM." />
+			<mx:VRule x="670" y="1" height="21"/>
+			<s:Button skinClass="components.rdBarButton" id="settingsBtn" click="currentState = 'Settings'" 
+				x="680" x.Startup="250" y="0" label="Settings" 
+				toolTip="Razuna Desktop settings." />
+			
+			<mx:VRule x="780" x.Startup="350" y="1" height="21"/>
+			<s:Button skinClass="components.rdBarButton" id="helpBtn" 
+				click="navigateToURL(new URLRequest('http://wiki.razuna.com/display/ecp/Razuna+Desktop'),'_blank')" 
+				toolTip="Get help on Razuna Desktop."
+				x="800" x.Startup="370" y="0" label="Help" width="76"/>
+			
+		</s:Group>
+		<s:Group d:id="3" id="group2" d:userLabel="topBar">
+			<s:Rect x="1" y="1" width="898" height="40" ai:knockout="0">
+				<s:fill>
+					<s:LinearGradient x="400" y="5.5" scaleX="52" rotation="90">
+						<s:entries>
+							<s:GradientEntry color="0xffffff" ratio="0"/>
+							<s:GradientEntry color="0xe6e6e6" ratio="0.50303"/>
+							<s:GradientEntry color="0xd7d7d7" ratio="1"/>
+						</s:entries>
+					</s:LinearGradient>
+				</s:fill>
+			</s:Rect>
+		</s:Group>
+	</fx:DesignLayer>
+	<s:RichText id="versionLabel" color="#000000" fontSize="10" fontFamily="Verdana" x="223" y="23" />
+	<!--resizeMode="scale"-->
+	<s:BitmapImage id="logo" source="@Embed('/assets/razuna-logo.png')"  x="7" y="7" d:userLabel="Logo"/>
+	<!--<s:RichText id="infoLabel" color="#000000" fontSize="12" fontFamily="Verdana" x="18" y="465" width="800"/>-->
+	<s:Button click="nativeApplication.activeWindow.minimize()" skinClass="components.rdMinimizeButton"  x="430" y="10" label="Minimize" id="minimizeButton"/>
+	<s:Button click="nativeApplication.activeWindow.close()" skinClass="components.rdCloseButton"  x="450" y="10" label="Close" id="closeButton"/>
+	<!--<components:ImageFlip includeIn="LoggedIn" x="9" y="595" id="imageFlip" d:userLabel="ImageFlipCustomComponent">
+	</components:ImageFlip>-->
+	<!--<mx:Image id="image" x="9" y="420" />-->
+ 	<components:rdLogin id="loginComponent" x.Startup="10" x="900" y="100" width="450" height="370" />
+ 	<components:rdSettings id="settingsComponent" x="900" y="100" width="450" height="370" x.Settings="10" />
+ 	<components:rdFoldersPanel id="foldersComponent" x.LoggedIn="10" x.Upload="10" x="1080" y="100" width="400" height="370" />
+ 	<components:rdCollectionsPanel id="collectionsPanel" x="1000" x.Collections="10" y="100" width="400" height="180" />
+ 	<components:rdCollectionPanel id="collectionPanel" x="1000" x.Collections="10" y="290" width="400" height="180" />
+ 	<components:rdUploadPanel id="uploadList" x.Upload="430" x="940" y="100" width="450" height="370" />
+ 	<components:rdSearch id="searchComponent" x.Upload="900" x="1040" y="70" width="400" height="15" />
+ 	<components:rdAssets id="assetsComponent" x.LoggedIn="430" x.Collections="430" y="100" width="450" height="370" x="1060" />
+ 	<!--<components:rdMediaPlayer id="mediaComponent" x="10" y="400" width="450" height="370" visible="true" includeIn="LoggedIn,Collections" itemCreationPolicy="immediate" />-->
+ 	<!--<components:rdBrowser id="browserComponent" includeIn="Collections" x="10" y="450" width="950" height="970" visible="true"itemCreationPolicy="immediate" />-->
+	
+	<!--<s:Button id="resizeBtn" tabIndex="6" click="nativeWindow.startResize()" label="Resize" x="870" y="670" skinClass="components.rdButton"  d:userLabel="resizeButton"/>-->
+	<fx:Style source="RD.css"/>
+	<fx:Private>
+		<ai:PrivateElement d:ref="#2">
+			<ai:LayerOptions colorType="ThreeColor">
+				<ai:ThreeColor blue="257" green="128.502" red="79.31"/>
+			</ai:LayerOptions>
+		</ai:PrivateElement>
+		<ai:PrivateElement ai:hashcode="c051784676c7bac76e2d9077799744f3" d:ref="#3">
+			<ai:Rect height="24" knockout="0" width="541" x="0" y="0">
+				<ai:Fill colorType="Gradient">
+					<ai:Gradient angle="-90" gradientType="linear" length="21.557" originX="270.5" originY="0.741">
+						<ai:GradientStops>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="0">
+								<ai:ThreeColor blue="0.89" green="0.89" red="0.894"/>
+							</ai:GradientStop>
+							<ai:GradientStop colorType="ThreeColor" rampPoint="100">
+								<ai:ThreeColor blue="0.678" green="0.678" red="0.678"/>
+							</ai:GradientStop>
+						</ai:GradientStops>
+					</ai:Gradient>
+				</ai:Fill>
+				<ai:ArtStyle/>
+			</ai:Rect>
+		</ai:PrivateElement>
+	</fx:Private>
+	
+</s:WindowedApplication>

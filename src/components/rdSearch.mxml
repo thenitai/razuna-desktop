@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/halo" 
+		 width="450" height="37" 
+		 xmlns:search="services.search.*" 
+		 creationComplete="group_creationCompleteHandler(event)">
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.events.FlexEvent;
+			import mx.rpc.events.ResultEvent;
+			
+			import services.search.Search;
+			private var gb:Singleton = Singleton.getInstance();
+			private var search:Search;
+
+			protected function group_creationCompleteHandler( event:FlexEvent ):void
+			{
+				search = new Search( gb.hostname );
+				
+
+				searchassetsResult.addEventListener( ResultEvent.RESULT, AssetsComponentPopulate );
+			}
+			
+			protected function searchBtn_clickHandler( event:MouseEvent ):void
+			{
+				doSearch();
+			}
+
+			protected function AssetsComponentPopulate( event:ResultEvent ):void
+			{
+				gb.RDapp.assetsComponent.AssetsPopulate( event ) ;
+			}
+			
+			protected function quickSearch_enterHandler(event:FlexEvent):void
+			{
+				doSearch();
+			}
+			
+			private function doSearch():void
+			{
+				if ( quickSearch.text.length > 2 )
+				{
+					searchassetsResult.token = search.searchassets( gb.sessiontoken, quickSearch.text, 0, 0, 'all', '' );
+				}
+				else
+				{
+					this.parentApplication.statusText.text = "Search term must be at least 3 characters.";
+				}
+			}
+			
+			private function clearHelp():void
+			{
+				if ( quickSearch.text == "Search..." ) quickSearch.text = "" else quickSearch.selectAll();
+			}		
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<s:CallResponder id="searchassetsResult"/>
+<!--		<search:Search id="search" fault="Alert.show(event.fault.faultString + '\n' + event.fault.faultDetail)" showBusyCursor="true"/>
+-->	
+	</fx:Declarations>
+	<s:TextInput id="quickSearch" enter="quickSearch_enterHandler(event)" focusIn="clearHelp()" text="Search..." x="252" y="5"/>
+
+	<s:Button x="384" y="6" label="Search" id="searchBtn" click="searchBtn_clickHandler(event)" width="66"/>
+</s:Group>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:ai="http://ns.adobe.com/ai/2008" 
+		 xmlns:d="http://ns.adobe.com/fxg/2008/dt" 
+		 xmlns:fc="http://ns.adobe.com/thermo/2009"
+		 xmlns:local="*"
+		 creationComplete="init()"
+		 xmlns:mx="library://ns.adobe.com/flex/halo">
+	<fx:Script source="browserPanel.as" />
+	
+	<fx:Style>
+		@namespace "library://ns.adobe.com/flex/spark";
+		#vGrp { 
+			color: #000000; 
+			fontFamily: "Verdana";
+			fontSize: "14";
+		}
+	</fx:Style>
+	
+	<s:Panel title="Browser:" 
+			 width="500" height="400" 
+			 backgroundColor="#AAAAAA"
+			 >
+		<mx:HTML id="html"/>
+		<mx:SWFLoader id="swf" />
+	</s:Panel>
+</s:Group>
