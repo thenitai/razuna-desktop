@@ -28,12 +28,11 @@
     <buildTarget buildTargetName="default">
       <airSettings airCertificatePath="D:/projects/Onyx-VJ/RazunaDesktop/certificate/RazunaDesktop.p12" airTimestamp="true" version="1">
         <airExcludes>
-          <pathEntry path="assets"/>
           <pathEntry path="translations"/>
+          <pathEntry path="assets"/>
         </airExcludes>
       </airSettings>
       <actionScriptSettings version="1"/>
     </buildTarget>
   </buildTargets>
 </actionScriptProperties>
-
